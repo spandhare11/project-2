@@ -25,7 +25,7 @@ sysmonconfig.xml enables detailed logging (process creation, network events, etc
 
 You can export current config:
 
-Sysmon64.exe -c > current-config.xml
+Sysmon64.exe -c > current-config.xml '''
 
 ✅ Summary
 This lab strengthens your detection engineering and SOC analysis skills by:
