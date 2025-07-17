@@ -1,0 +1,16 @@
+1.index=main EventCode=*
+
+2.index=sysmonsplunk EventCode=3 DestinationIp=93.184*
+
+3.index = sysmonsplunk *
+| search Preventivo * 
+
+4.index=sysmonsplunk  EventCode!=11 AND EventCode=1
+
+5.index=sysmonsplunk EventCode=22
+| table _time, host, QueryName
+| dedup QueryName
+| rename QueryName as Domain
+
+6.index=sysmonsplunk EventCode=11
+| table _time, host, TargetFilename, User
