@@ -1,6 +1,6 @@
 # 🛡️ Project 2: Splunk + Sysmon Log Monitoring Lab
 
-This lab demonstrates the setup of a centralized log monitoring environment using **Sysmon** and **Splunk**, with a focus on detecting suspicious activity like reverse shells and unauthorized login attempts. It simulates a basic blue team use case in a Windows environment.
+This lab demonstrates the setup of a centralized log monitoring environment using **Sysmon** and **Splunk**, focused on detecting suspicious activity like reverse shells and unauthorized login attempts. It simulates a basic Blue Team use case for threat detection and analysis.
 
 ---
 
@@ -18,22 +18,14 @@ This lab demonstrates the setup of a centralized log monitoring environment usin
 
 ### 1. Install Sysmon with Configuration
 
-```bash
+
 Sysmon64.exe -accepteula -i sysmonconfig.xml
 
-sysmonconfig.xml enables detailed logging (process creation, network events, etc.)
 
-You can export current config:
+## ✅ Summary
 
-Sysmon64.exe -c > current-config.xml 
+This lab strengthens your **detection engineering** and **SOC analysis** skills by:
 
-###✅ Summary
-This lab strengthens your detection engineering and SOC analysis skills by:
-
-Configuring host-level logging (Sysmon)
-
-Ingesting logs into SIEM (Splunk)
-
-Creating basic detection logic
-
-Mapping behaviors to real-world attack techniques
+- 🖥️ Configuring **host-level logging** using Sysmon  
+- 📡 Ingesting logs into **SIEM (Splunk)** for centralized analysis  
+- 📜 Creating basic **detection logic** using Splunk SPL queries
